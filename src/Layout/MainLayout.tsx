@@ -1,4 +1,5 @@
 import Navbar from '@/components/Navbar'
+import HeroSection from '@/sections/HeroSection'
 import React from 'react'
 
 const MainLayout = () => {
@@ -6,8 +7,9 @@ const MainLayout = () => {
     <main className='w-full h-screen bg-gray-50'>
 
         <Navbar/>
-<div>
-    d
+<div className='w-11/12  mx-auto'>
+  <HeroSection/>
+  
 </div>
 
 
