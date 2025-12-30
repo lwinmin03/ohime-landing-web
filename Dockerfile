@@ -1,0 +1,19 @@
+FROM node:25.2.1-alpine
+
+WORKDIR /app
+
+COPY package.json package-lock.json ./
+
+RUN npm install 
+
+COPY  . .
+
+EXPOSE 5173
+
+CMD [ "npm","run","dev" ]
+
+
+
+
+
+
