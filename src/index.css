@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+@import "tailwindcss";
+
+html,body {
+  width: 100vw;
+  min-height: 100dvh;
+}
+
+@theme {
+  --font-arimo:"Arimo", sans-serif;
+}
