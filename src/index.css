@@ -6,6 +6,49 @@ html,body {
   min-height: 100dvh;
 }
 
+
 @theme {
-  --font-arimo:"Arimo", sans-serif;
+  --font-arimo: "Arimo", sans-serif;
 }
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee__track {
+  display: flex;
+  width: max-content;
+  animation: marquee 40s linear infinite;
+  will-change: transform;
+}
+
+.marquee__item {
+  flex-shrink: 0;
+  padding-right: 7rem;
+}
+
+/* Base animation */
+@keyframes marquee {
+  from {
+    transform: translateX(-25%);
+  }
+  to {
+    transform: translateX(-75%);
+  }
+}
+
+/* Variations */
+.marquee--slow {
+  animation-duration: 45s;
+}
+
+.marquee--fast {
+  animation-duration: 30s;
+}
+
+.marquee--reverse {
+  animation-direction: reverse;
+}
+
+

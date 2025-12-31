@@ -1,3 +1,5 @@
+import { CE, GPT, IC, MO, MUL, VI } from "@/assets";
+
 export interface HeroCardType {
   no: string;
   heading: string;
@@ -34,3 +36,18 @@ export const cards: HeroCardType[] = [
     filler: "Access all e-mobility solutions via a seamless experience",
   },
 ];
+
+
+interface LOGO {
+  id:number,
+  logo:string
+}
+
+
+export const logos:LOGO[]=[
+  {id:1,logo:MUL},
+  {id:2,logo:CE},
+   {id:3,logo:VI},
+  {id:4,logo:GPT},
+  {id:5,logo:IC}
+]
