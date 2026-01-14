@@ -54,10 +54,10 @@ const HeroSection = () => {
 
   return (
     <section className="bg-gray-400/5 mt-10 p-12 h-full">
-      <div className="font-arimo w-8/12 mx-auto flex flex-col py-24 justify-center items-center gap-y-9">
+      <div className="font-arimo w-full md:w-8/12 mx-auto flex flex-col md:py-24 justify-center items-center gap-y-9">
         <h2
           ref={heroRef}
-          className="text-6xl text-center font-medium mt-0.5 p-1"
+          className="text-4xl md:text-6xl text-center font-medium mt-0.5 p-1"
         >
           The only Myanmar electric mobility platform for buildings
         </h2>
@@ -76,7 +76,7 @@ const HeroSection = () => {
         </button>
       </div>
 
-      <div className="grid grid-cols-6 gap-64">
+      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-6 gap-8 lg:gap-64 md:gap-30">
         {cards.map((card) => (
           <HeroCard
             key={card.no}

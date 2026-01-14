@@ -49,17 +49,17 @@ const MobilityHeader = () => {
   }, { scope: containerRef }); // Scope ensures cleanups
 
   return (
-    <div className="w-6/12 font-arimo" >
+    <div className="w-full md:w-6/12 font-arimo" >
       <h2 className="px-2 text-lg py-1 text-gray-900/50 w-fit uppercase border border-gray-900/40 rounded-md">
         Electric mobility hub
       </h2>
       <div 
         ref={containerRef} 
-        className="w-10/12 mt-2 overflow-hidden" 
+        className="w-full md:w-10/12 mt-2 overflow-hidden" 
       >
         <div 
           ref={textRef} 
-          className="text-4xl font-medium text-gray-900"
+          className="text-3xl md:text-4xl font-medium text-gray-900"
           
         >
           Tailored solutions to help you get your building EV ready

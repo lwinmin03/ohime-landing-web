@@ -9,10 +9,10 @@ import TrustedParterner from '@/sections/TrustedParterner'
 const MainLayout = () => {
   return (
     
-    <main className='w-full min-h-screen bg-gray-50 relative'> 
+    <main className='w-full  h-screen bg-gray-50 relative overflow-auto'> 
 
        <Navbar/>
-       <div className='w-11/12 mx-auto'>
+       <div className='w-11/12 mx-auto overflow-x-hidden'>
          <HeroSection/>
          <TrustedParterner />
          <MobilityHub />
