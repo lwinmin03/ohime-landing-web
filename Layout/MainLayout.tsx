@@ -1,10 +1,5 @@
 
-import Navbar from '@/components/Common/Navbar'
-import GallerySection from '@/sections/GallerySection'
-import HeroSection from '@/sections/HeroSection'
-import MobilityHub from '@/sections/MobilityHub'
-import TrustedParterner from '@/sections/TrustedParterner'
-
+import React from 'react'
 
 const MainLayout = () => {
   return (
@@ -16,7 +11,7 @@ const MainLayout = () => {
          <HeroSection/>
          <TrustedParterner />
          <MobilityHub />
-         <GallerySection />
+         <div className='h-96 bg-red-600'></div>
       
        </div>
 

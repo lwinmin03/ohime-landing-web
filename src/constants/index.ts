@@ -1,4 +1,4 @@
-import { CE, GPT, IC, MO, MUL, VI } from "@/assets";
+import { bikeImgUrl, carImgUrl, CE, GPT, IC, MO, MUL, scooterImgUrl, VI } from "@/assets";
 
 export interface HeroCardType {
   no: string;
@@ -50,4 +50,16 @@ export const logos:LOGO[]=[
    {id:3,logo:VI},
   {id:4,logo:GPT},
   {id:5,logo:IC}
+]
+
+
+interface gallery extends LOGO{
+  title:string
+}
+
+
+export const galleryItems:gallery[]=[
+  {id:1,title:"Shared EVs",logo:carImgUrl},
+  {id:2,title:"Shared e-bikes",logo:bikeImgUrl},
+  {id:3,title:"Shared Shared e-scooters",logo:scooterImgUrl}
 ]
